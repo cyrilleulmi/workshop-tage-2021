@@ -376,17 +376,17 @@ spec:
             group: operators
             component: entity-operator
         securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
+          # runAsNonRoot: true
+          runAsUser: 0
+          runAsGroup: 1001
+          fsGroup: 1001
           readOnlyRootFilesystem: false
       topicOperatorContainer:
         securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
+          # runAsNonRoot: true
+          runAsUser: 0
+          runAsGroup: 1001
+          fsGroup: 1001
           readOnlyRootFilesystem: false
 
   # WORK IN PROGRESS
