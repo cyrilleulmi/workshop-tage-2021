@@ -77,10 +77,10 @@ spec:
           fsGroup: 1001
       kafkaContainer:
         securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
+          # runAsNonRoot: true
+          runAsUser: 1001
+          runAsGroup: 1001
+          fsGroup: 1001
           readOnlyRootFilesystem: false
     config:
       background.threads: 12
