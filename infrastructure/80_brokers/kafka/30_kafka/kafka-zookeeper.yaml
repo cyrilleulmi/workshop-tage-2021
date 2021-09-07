@@ -71,10 +71,10 @@ spec:
             group: clusters
             component: kafka
         securityContext:
-          runAsNonRoot: true
-          # runAsUser: 1001
-          # runAsGroup: 1001
-          # fsGroup: 1001
+          # runAsNonRoot: true
+          runAsUser: 1001
+          runAsGroup: 1001
+          fsGroup: 1001
       kafkaContainer:
         securityContext:
           runAsNonRoot: true
